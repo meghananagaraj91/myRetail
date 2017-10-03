@@ -3,6 +3,8 @@ package com.trgt.mrl.myRetail.service;
 import java.io.IOException;
 import java.util.Map;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -20,6 +22,7 @@ import com.trgt.mrl.myRetail.repository.ProductRepository;
  */
 @Service
 public class ProductService {
+	protected Logger logger = LoggerFactory.getLogger(this.getClass());
 	
 	@Autowired
 	private ProductInfoClient productInfoClient;
@@ -40,10 +43,10 @@ public class ProductService {
 	 */
 	public Product getProductById(String productId) throws JsonParseException, JsonMappingException, IOException {
 		// From application DB
-		System.out.println("productService  " + productRepository);
 		Product product = productRepository.getProductByproductId(productId);
 		// From external API
 		product.setTitle(this.getTitleForProduct(productId));
+		logger.info("Title from RFemote API   "+ product.getTitle());
 		return product;
 	}
 	
@@ -82,6 +85,7 @@ public class ProductService {
 		ObjectMapper infoMapper = new ObjectMapper();
 		System.out.println(productInfoClient);
 		ResponseEntity<String> response = productInfoClient.getProductInfoById(productId);
+		System.out.println(response.getStatusCode().value());
 		Map<String, Map> infoMap = infoMapper.readValue(response.getBody(), Map.class);
 		
 		return infoMap;
