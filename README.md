@@ -1,4 +1,4 @@
-                                            # Target Interview - USA
+# Target Interview - USA
 
 ## Case Study:  myRetail RESTful service
 
