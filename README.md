@@ -1,4 +1,4 @@
-                                            <b>Target Interview - USA</b>
+                                            # Target Interview - USA
 
 Case Study:  myRetail RESTful service
 
