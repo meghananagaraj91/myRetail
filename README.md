@@ -22,8 +22,10 @@ Solution:
 
 MyRetail API Solution provides the ability to: 
 
-a. Retrieve product and price information by Product Id.
-b. Update the price information in the database. 
+<ol>
+  <li>Retrieve product and price information by Product Id.</li>
+  <li>Update the price information in the database.</li>
+</ol>
 
 Method
 Request
