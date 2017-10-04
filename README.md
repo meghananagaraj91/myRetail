@@ -1,6 +1,6 @@
                                                # Target Interview - USA
 
-## **Case Study:  myRetail RESTful service**
+## __Case Study:  myRetail RESTful service__
 
 myRetail is a rapidly growing company with HQ in Richmond, VA and over 200 stores across the east coast. myRetail wants to make its internal data available to any number of client devices, from myRetail.com to native mobile apps. 
 The goal for this exercise is to create an end-to-end Proof-of-Concept for a products API, which will aggregate product data from multiple sources and return it as JSON to the caller. 
@@ -18,9 +18,9 @@ Reads pricing information from a NoSQL data store and combines it with the produ
 BONUS: Accepts an HTTP PUT request at the same path (/products/{id}), containing a JSON request body similar to the GET response, and updates the product’s price in the data store. 
 
 *********************************************************************************************************************************
-# **Solution: **
+# __Solution: __
 
-## **MyRetail API Solution provides the ability to: **
+## __MyRetail API Solution provides the ability to: __
 
 <ol>
   <li>Retrieve product and price information by Product Id.</li>
@@ -34,7 +34,7 @@ GET
 PUT
 /products/{id}
 
-###### **Technology Stack:**
+###### __Technology Stack:__
 
 Spring Boot : 
 	https://start.spring.io/
@@ -52,7 +52,7 @@ Mokito/Junit:
 Postman: 
 	https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en 
 
-###### **Setup instructions:**
+###### __Setup instructions:__
 
 1. Java 1.7
 2. Eclipse  Mars: http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/mars2
@@ -68,7 +68,7 @@ b) Clone the git project from git-bash or command prompt (You must have git setu
 6. Import the project into eclipse –   File->import
 
 
-###### **Test the project:**
+###### __Test the project:__
 
 Test cases are present on the following directory. I have written some test cases for controller class and service  class using mokito. I am using mokitoformockdata.
 
@@ -77,14 +77,14 @@ C:\WORK_ENV\workspace\myRetail\src\test\java
 To run the test  Go to project folder and trigger following command on the command prompt ( or gitbash). 
 mvn test.
 
-###### **To run the application:**
+###### __To run the application:__
 
 Run mongo DB from the command prompt.  And test  ---  http://localhost:27017/  (default port)
 Go to the project folder and trigger the command:
 
 mvn spring-boot:run 
 
-###### **Check the http Request:**
+###### __Check the http Request:__
 
 GET:  With Valid product ID
 ![getvalidproduct](https://user-images.githubusercontent.com/12552208/31157764-3cd0c088-a88b-11e7-9f0a-5c84f0d191a8.png)
