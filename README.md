@@ -60,6 +60,7 @@ Download project from the following git repository
 https://github.com/rohitdec01/myRetail 
 
 a) Download as a ZIP file   OR
+
 b) Clone the git project from git-bash or command prompt (You must have git setup)
 
 6. Import the project into eclipse –   File->import
