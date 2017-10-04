@@ -1,4 +1,4 @@
-# Target Interview - USA
+                                               # Target Interview - USA
 
 ## Case Study:  myRetail RESTful service
 
@@ -34,7 +34,7 @@ GET
 PUT
 /products/{id}
 
-Technology Stack:
+# Technology Stack:
 
 Spring Boot : 
 	https://start.spring.io/
@@ -52,7 +52,7 @@ Mokito/Junit:
 Postman: 
 	https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en 
 
-Setup instructions:
+# Setup instructions:
 
 1. Java 1.7
 2. Eclipse  Mars: http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/mars2
@@ -68,7 +68,7 @@ b) Clone the git project from git-bash or command prompt (You must have git setu
 6. Import the project into eclipse –   File->import
 
 
-Test the project:
+# Test the project:
 
 Test cases are present on the following directory. I have written some test cases for controller class and service  class using mokito. I am using mokitoformockdata.
 
@@ -77,14 +77,14 @@ C:\WORK_ENV\workspace\myRetail\src\test\java
 To run the test  Go to project folder and trigger following command on the command prompt ( or gitbash). 
 mvn test.
 
-To run the application:
+# To run the application:
 
 Run mongo DB from the command prompt.  And test  ---  http://localhost:27017/  (default port)
 Go to the project folder and trigger the command:
 
 mvn spring-boot:run 
 
-Check the http Request:
+# Check the http Request:
 
 GET:  With Valid product ID
 ![getvalidproduct](https://user-images.githubusercontent.com/12552208/31157764-3cd0c088-a88b-11e7-9f0a-5c84f0d191a8.png)
