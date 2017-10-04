@@ -95,7 +95,7 @@ GET:  With  invalid product ID
 
 
 PUT Request: With Valid product Id
-
+![putvalidproduct](https://user-images.githubusercontent.com/12552208/31157845-d4e7a5bc-a88b-11e7-938e-616a23447775.png)
 
 
 PUT Request: With Invalid product Id
