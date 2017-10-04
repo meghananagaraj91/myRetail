@@ -18,7 +18,7 @@ Reads pricing information from a NoSQL data store and combines it with the produ
 BONUS: Accepts an HTTP PUT request at the same path (/products/{id}), containing a JSON request body similar to the GET response, and updates the product’s price in the data store. 
 
 *********************************************************************************************************************************
-# __Solution: __
+# __Solution:__
 
 ## __MyRetail API Solution provides the ability to: __
 
