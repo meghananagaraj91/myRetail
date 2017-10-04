@@ -73,6 +73,7 @@ Test cases are present on the following directory. I have written some test case
 C:\WORK_ENV\workspace\myRetail\src\test\java
 
 To run the test  Go to project folder and trigger following command on the command prompt ( or gitbash). 
+
 mvn test.
 
 ###### __To run the application:__
