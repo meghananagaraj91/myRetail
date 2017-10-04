@@ -27,12 +27,9 @@ BONUS: Accepts an HTTP PUT request at the same path (/products/{id}), containing
   <li>Update the price information in the database.</li>
 </ol>
 
-Method
-Request
-GET
-/products/{id}
-PUT
-/products/{id}
+__Method__  __Request__
+GET    /products/{id}
+PUT    /products/{id}
 
 ###### __Technology Stack:__
 
