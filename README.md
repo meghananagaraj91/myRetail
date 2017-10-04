@@ -20,7 +20,7 @@ BONUS: Accepts an HTTP PUT request at the same path (/products/{id}), containing
 *********************************************************************************************************************************
 # __Solution:__
 
-## __MyRetail API Solution provides the ability to: __
+## __MyRetail API Solution provides the ability to:__
 
 <ol>
   <li>Retrieve product and price information by Product Id.</li>
