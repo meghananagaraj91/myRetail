@@ -86,21 +86,21 @@ mvn spring-boot:run
 
 ###### __Check the http Request:__
 
-GET:  With Valid product ID
+GET:  With Valid product ID  (http://localhost:8080/products/13860428)
 ![getvalidproduct](https://user-images.githubusercontent.com/12552208/31157764-3cd0c088-a88b-11e7-9f0a-5c84f0d191a8.png)
 
 
-GET:  With  invalid product ID
+GET:  With  invalid product ID  (http://localhost:8080/products/138604281)
 ![getinvalidproduct](https://user-images.githubusercontent.com/12552208/31157806-901a2676-a88b-11e7-92b1-7fbcdffa4ca6.png)
 
 
 
 
-PUT Request: With Valid product Id
+PUT Request: With Valid product Id  (http://localhost:8080/products/13860428)
 ![putvalidproduct](https://user-images.githubusercontent.com/12552208/31157845-d4e7a5bc-a88b-11e7-938e-616a23447775.png)
 
 
-PUT Request: With Invalid product Id
+PUT Request: With Invalid product Id  (http://localhost:8080/products/138604281)
 ![putinvalidproduct](https://user-images.githubusercontent.com/12552208/31157878-0b1f975c-a88c-11e7-8c5a-b242315ca8c8.png)
 
 
