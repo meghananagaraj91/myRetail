@@ -1,6 +1,6 @@
                                             # Target Interview - USA
 
-Case Study:  myRetail RESTful service
+## Case Study:  myRetail RESTful service
 
 myRetail is a rapidly growing company with HQ in Richmond, VA and over 200 stores across the east coast. myRetail wants to make its internal data available to any number of client devices, from myRetail.com to native mobile apps. 
 The goal for this exercise is to create an end-to-end Proof-of-Concept for a products API, which will aggregate product data from multiple sources and return it as JSON to the caller. 
@@ -18,9 +18,9 @@ Reads pricing information from a NoSQL data store and combines it with the produ
 BONUS: Accepts an HTTP PUT request at the same path (/products/{id}), containing a JSON request body similar to the GET response, and updates the product’s price in the data store. 
 
 *********************************************************************************************************************************
-Solution: 
+# Solution: 
 
-MyRetail API Solution provides the ability to: 
+## MyRetail API Solution provides the ability to: 
 
 <ol>
   <li>Retrieve product and price information by Product Id.</li>
