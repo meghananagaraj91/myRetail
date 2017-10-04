@@ -99,7 +99,7 @@ PUT Request: With Valid product Id
 
 
 PUT Request: With Invalid product Id
-
+![putinvalidproduct](https://user-images.githubusercontent.com/12552208/31157878-0b1f975c-a88c-11e7-8c5a-b242315ca8c8.png)
 
 
 
