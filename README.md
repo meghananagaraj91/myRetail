@@ -1,0 +1,104 @@
+                                            Target Interview - USA
+
+Case Study:  myRetail RESTful service
+
+myRetail is a rapidly growing company with HQ in Richmond, VA and over 200 stores across the east coast. myRetail wants to make its internal data available to any number of client devices, from myRetail.com to native mobile apps. 
+The goal for this exercise is to create an end-to-end Proof-of-Concept for a products API, which will aggregate product data from multiple sources and return it as JSON to the caller. 
+Your goal is to create a RESTful service that can retrieve product and price details by ID. The URL structure is up to you to define, but try to follow some sort of logical convention.
+Build an application that performs the following actions: 
+Responds to an HTTP GET request at /products/{id} and delivers product data as JSON (where {id} will be a number. 
+Example product IDs: 15117729, 16483589, 16696652, 16752456, 15643793) 
+Example response: {"id":13860428,"name":"The Big Lebowski (Blu-ray) (Widescreen)","current_price":{"value": 13.49,"currency_code":"USD"}}
+Performs an HTTP GET to retrieve the product name from an external API. (For this exercise the data will come from redsky.target.com, but let’s just pretend this is an internal resource hosted by myRetail) 
+
+Example: http://redsky.target.com/v2/pdp/tcin/13860428?excludes=taxonomy,price,promotion,bulk_ship,rating_and_review_reviews,rating_and_review_statistics,question_answer_statistics
+
+Reads pricing information from a NoSQL data store and combines it with the product id and name from the HTTP request into a single response. 
+
+BONUS: Accepts an HTTP PUT request at the same path (/products/{id}), containing a JSON request body similar to the GET response, and updates the product’s price in the data store. 
+
+*********************************************************************************************************************************
+Solution: 
+
+MyRetail API Solution provides the ability to: 
+
+a. Retrieve product and price information by Product Id.
+b. Update the price information in the database. 
+
+Method
+Request
+GET
+/products/{id}
+PUT
+/products/{id}
+
+Technology Stack:
+
+Spring Boot : 
+	https://start.spring.io/
+	https://spring.io/guides/gs/serving-web-content/ 
+Feign:
+Declarative REST Client: Feign creates a dynamic implementation of an interface decorated with JAX-RS or Spring MVC annotations.
+	https://cloud.spring.io/spring-cloud-netflix/ 
+MongoDB:
+	https://www.mongodb.com/what-is-mongodb 
+
+Maven:
+	https://maven.apache.org/ 
+Mokito/Junit:
+	http://site.mockito.org/ 
+Postman: 
+	https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en 
+
+Setup instructions:
+
+1. Java 1.7
+2. Eclipse  Mars: http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/mars2
+3. Install Mongo DB: https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/
+4. Install Maven: https://www.mkyong.com/maven/how-to-install-maven-in-windows/ 
+5. Github:
+Download project from the following git repository
+https://github.com/rohitdec01/myRetail 
+
+a) Download as a ZIP file   OR
+b) Clone the git project from git-bash or command prompt (You must have git setup)
+
+6. Import the project into eclipse –   File->import
+
+
+Test the project:
+
+Test cases are present on the following directory. I have written some test cases for controller class and service  class using mokito. I am using mokitoformockdata.
+
+C:\WORK_ENV\workspace\myRetail\src\test\java
+
+To run the test  Go to project folder and trigger following command on the command prompt ( or gitbash). 
+mvn test.
+
+To run the application:
+
+Run mongo DB from the command prompt.  And test  ---  http://localhost:27017/  (default port)
+Go to the project folder and trigger the command:
+
+mvn spring-boot:run 
+
+Check the http Request:
+
+GET:  With Valid product ID
+
+
+
+GET:  With  invalid product ID
+
+
+
+
+PUT Request: With Valid product Id
+
+
+
+PUT Request: With Invalid product Id
+
+
+
+
