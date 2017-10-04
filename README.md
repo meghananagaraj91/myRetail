@@ -33,20 +33,20 @@ PUT    /products/{id}
 
 ###### __Technology Stack:__
 
-Spring Boot : 
+1. Spring Boot : 
 	https://start.spring.io/
 	https://spring.io/guides/gs/serving-web-content/ 
-Feign:
+2. Feign:
 Declarative REST Client: Feign creates a dynamic implementation of an interface decorated with JAX-RS or Spring MVC annotations.
 	https://cloud.spring.io/spring-cloud-netflix/ 
-MongoDB:
+3. MongoDB:
 	https://www.mongodb.com/what-is-mongodb 
 
-Maven:
+4. Maven:
 	https://maven.apache.org/ 
-Mokito/Junit:
+5. Mokito/Junit:
 	http://site.mockito.org/ 
-Postman: 
+6. Postman: 
 	https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en 
 
 ###### __Setup instructions:__
