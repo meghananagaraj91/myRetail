@@ -71,7 +71,7 @@ b) Clone the git project from git-bash or command prompt (You must have git setu
 
 ###### __Test the project:__
 
-Test cases are present on the following directory. I have written some test cases for controller class and service  class using mokito. I am using mokitoformockdata.
+Test cases are present on the following directory. I have written some test cases for controller class and service  class using mokito. I am using mokito for mockdata.
 
 C:\WORK_ENV\workspace\myRetail\src\test\java
 
