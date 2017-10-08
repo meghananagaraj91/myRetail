@@ -30,6 +30,7 @@ BONUS: Accepts an HTTP PUT request at the same path (/products/{id}), containing
   <li>Update the price information in the database.</li>
 </ol>
 
+All the end points are totally secre in this application. I have implemented basic security and method level security as well. Update resource can be accessed by admin/admin user only.
                                                  Method               Request
                                                   GET              /products/{id}
                                                   PUT              /products/{id}
@@ -87,6 +88,12 @@ Go to the project folder and trigger the command:
 mvn spring-boot:run 
 
 ###### __Check the http Request:__
+
+###### Secure API
+The end point of this application is fullt secure. There are 3 users in this application.
+1. admin/admin   --- Can update price information and get the product by prodctId. 
+2. normaluser/normaluser  --  get the product by prodctId.
+3. dbuser/dbuser  -- get the product by prodctId.
 
 GET:  With Valid product ID  (http://localhost:8080/products/13860428)
 ![getvalidproduct](https://user-images.githubusercontent.com/12552208/31157764-3cd0c088-a88b-11e7-9f0a-5c84f0d191a8.png)
