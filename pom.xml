@@ -25,6 +25,12 @@
 	</properties>
 
 	<dependencies>
+		<!--  Start: To add a security in Rest API -->
+		<dependency>
+		  <groupId>org.springframework.boot</groupId>
+		  <artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+		<!--  End: To add a security in Rest API -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>

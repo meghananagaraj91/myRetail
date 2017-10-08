@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -53,8 +54,12 @@ public class ProductController {
 	 * @param prodInfo
 	 * @param productId
 	 * @return
+	 * 
+	 * Add method level security. Only admin can change the product price.
+	 *  
 	 */
 	@RequestMapping(value = "{id}", method = RequestMethod.PUT, produces = "application/json")
+	@PreAuthorize("hasRole('ROLE_ADMIN')")
 	public ResponseEntity<CustomResponse> modifyPrice(@RequestBody Product product,
 			@PathVariable("id") String productId) {
 		if (!product.productId.equalsIgnoreCase(productId)) {
