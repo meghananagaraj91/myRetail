@@ -109,5 +109,7 @@ PUT Request: With Valid product Idand admin/admin credentials  (http://localhost
 ![image](https://user-images.githubusercontent.com/12552208/31319946-3e3a1250-ac3a-11e7-8b69-d99e1a2a72d8.png)
 
 PUT Request: With Valid product Id and normaluser/normaluser credentials  (http://localhost:8080/products/13860428)
+![image](https://user-images.githubusercontent.com/12552208/31319968-8a0a3cd2-ac3a-11e7-956b-e8a39fb82256.png)
+
 
 
