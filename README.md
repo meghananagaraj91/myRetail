@@ -105,13 +105,9 @@ GET: with valid product and admin credentials (http://localhost:8080/products/13
 GET: Wrong product ID and valid credentials admin/admin (http://localhost:8080/products/13860428)
 ![image](https://user-images.githubusercontent.com/12552208/31319926-edc74194-ac39-11e7-914e-656dbf03893d.png)
 
+PUT Request: With Valid product Idand admin/admin credentials  (http://localhost:8080/products/13860428)
+![image](https://user-images.githubusercontent.com/12552208/31319946-3e3a1250-ac3a-11e7-8b69-d99e1a2a72d8.png)
 
-PUT Request: With Valid product Id  (http://localhost:8080/products/13860428)
-![putvalidproduct](https://user-images.githubusercontent.com/12552208/31157845-d4e7a5bc-a88b-11e7-938e-616a23447775.png)
-
-
-PUT Request: With Invalid product Id  (http://localhost:8080/products/138604281)
-![putinvalidproduct](https://user-images.githubusercontent.com/12552208/31157878-0b1f975c-a88c-11e7-8c5a-b242315ca8c8.png)
-
+PUT Request: With Valid product Id and normaluser/normaluser credentials  (http://localhost:8080/products/13860428)
 
 
