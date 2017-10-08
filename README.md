@@ -31,6 +31,7 @@ BONUS: Accepts an HTTP PUT request at the same path (/products/{id}), containing
 </ol>
 
 All the end points are totally secre in this application. I have implemented basic security and method level security as well. Update resource can be accessed by admin/admin user only.
+
                                                  Method               Request
                                                   GET              /products/{id}
                                                   PUT              /products/{id}
@@ -90,7 +91,7 @@ mvn spring-boot:run
 ###### __Check the http Request:__
 
 ###### Secure API
-The end point of this application is fullt secure. There are 3 users in this application.
+The end point of this application is fully secure. There are 3 users in this application.
 1. admin/admin   --- Can update price information and get the product by prodctId. 
 2. normaluser/normaluser  --  get the product by prodctId.
 3. dbuser/dbuser  -- get the product by prodctId.
