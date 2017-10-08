@@ -96,6 +96,9 @@ The end point of this application is fully secure. There are 3 users in this app
 2. normaluser/normaluser  --  get the product by prodctId.
 3. dbuser/dbuser  -- get the product by prodctId.
 
+GET: With valid product but no credentials (http://localhost:8080/products/13860428)
+![image](https://user-images.githubusercontent.com/12552208/31319867-e3139ece-ac38-11e7-88b1-4b4fdd0e0c73.png)
+
 GET:  With Valid product ID  (http://localhost:8080/products/13860428)
 ![getvalidproduct](https://user-images.githubusercontent.com/12552208/31157764-3cd0c088-a88b-11e7-9f0a-5c84f0d191a8.png)
 
