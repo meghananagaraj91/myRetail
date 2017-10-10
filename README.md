@@ -29,7 +29,7 @@ BONUS: Accepts an HTTP PUT request at the same path (/products/{id}), containing
   <li>Retrieve product and price information by Product Id.</li>
   <li>Update the price information in the database.</li>
   <li>Secure API with basic authentication.</li>	
-  <li>One rest end point is not resure.</li>	
+  <li>One rest end point is not recure.</li>	
 </ol>
 
 All the end points are totally secure in this application. I have implemented basic security and method level security as well. Update resource can be accessed by admin/admin user only.
