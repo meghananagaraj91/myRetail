@@ -28,14 +28,16 @@ BONUS: Accepts an HTTP PUT request at the same path (/products/{id}), containing
 <ol>
   <li>Retrieve product and price information by Product Id.</li>
   <li>Update the price information in the database.</li>
-  <li>Fully secure API with basic authentication.</li>	
+  <li>Secure API with basic authentication.</li>	
+  <li>One rest end point is not resure.</li>	
 </ol>
 
 All the end points are totally secure in this application. I have implemented basic security and method level security as well. Update resource can be accessed by admin/admin user only.
 
                                                  Method               Request
-                                                  GET              /products/{id}
-                                                  PUT              /products/{id}
+                                                  GET              /products/{id}              [SECURE]
+                                                  PUT              /products/{id}              [SECURE]
+						  GET              /products                   [NOT SECURE]
 
 ###### __Technology Stack:__
 
