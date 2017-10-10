@@ -37,7 +37,7 @@ All the end points are totally secure in this application. I have implemented ba
                                                  Method               Request
                                                   GET              /products/{id}              [SECURE]
                                                   PUT              /products/{id}              [SECURE]
-						  GET              /products                   [NOT SECURE]
+						      GET              /products                   [NOT SECURE]
 
 ###### __Technology Stack:__
 
