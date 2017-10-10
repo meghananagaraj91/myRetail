@@ -39,6 +39,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	protected void configure(HttpSecurity http) throws Exception {
 		//http.authorizeRequests().anyRequest().fullyAuthenticated().and().httpBasic().and().csrf().disable();
 		http.authorizeRequests()
+				.antMatchers("/products")
+				.permitAll()
 				.anyRequest()
 				.authenticated()
 			.and()
@@ -48,10 +50,14 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 				.csrf()
 				.disable();
 
-		/*
-		 * http.authorizeRequests() .antMatchers("/products/*").hasRole("USER")
-		 * .and() .formLogin();
-		 */
+		
+		  /*http.authorizeRequests() 
+		  		.antMatchers("/products").permitAll()
+		  		.antMatchers("/products/*").authenticated()
+		  	.and()
+		  		.csrf()
+		  		.disable();*/
+		 
 	}
 
 	/*

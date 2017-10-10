@@ -23,7 +23,7 @@ import com.trgt.mrl.myRetail.service.ProductService;
  * @author Rohit 
  * Created On : 10/02/2017
  */
-@RequestMapping(value="/products/")
+@RequestMapping(value="/products")
 @RestController
 public class ProductController {
 
@@ -31,12 +31,22 @@ public class ProductController {
 
 	@Autowired
 	ProductService productService;
+	
+	/**
+	 * @return
+	 * This method can be used to fetch all the products. but here I just want to show that any user can see this page.
+	 * 
+	 */
+	@RequestMapping(value = "",method = RequestMethod.GET)
+	public String index() {
+		return "No security on me. I can show all the products when implemented.";
+	}
 
 	/**
 	 * @param productId
 	 * @return
 	 */
-	@RequestMapping(value = "{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+	@RequestMapping(value = "/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<Product> getProductInfo(@PathVariable("id") String productId) {
 		logger.info("Inside getproductInfo  " + productId);
 
@@ -58,7 +68,7 @@ public class ProductController {
 	 * Add method level security. Only admin can change the product price.
 	 *  
 	 */
-	@RequestMapping(value = "{id}", method = RequestMethod.PUT, produces = "application/json")
+	@RequestMapping(value = "/{id}", method = RequestMethod.PUT, produces = "application/json")
 	@PreAuthorize("hasRole('ROLE_ADMIN')")
 	public ResponseEntity<CustomResponse> modifyPrice(@RequestBody Product product,
 			@PathVariable("id") String productId) {
