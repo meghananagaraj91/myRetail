@@ -34,9 +34,9 @@ BONUS: Accepts an HTTP PUT request at the same path (/products/{id}), containing
 
 All the end points are totally secure in this application. I have implemented basic security and method level security as well. Update resource can be accessed by admin/admin user only.
 
-                                                 Method               Request
-                                                  GET              /products/{id}              [SECURE]
-                                                  PUT              /products/{id}              [SECURE]
+                                                 Method               Request                   Credentials
+                                                  GET              /products/{id}              [SECURE -- normaluser/normaluser]
+                                                  PUT              /products/{id}              [SECURE -- admin/admin]
 						      GET              /products                   [NOT SECURE]
 
 ###### __Technology Stack:__
