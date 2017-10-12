@@ -28,16 +28,16 @@ BONUS: Accepts an HTTP PUT request at the same path (/products/{id}), containing
 <ol>
   <li>Retrieve product and price information by Product Id.</li>
   <li>Update the price information in the database.</li>
-  <li>Secure API with basic authentication.</li>	
+  <li>Secure API with basic authentication.</li>
   <li>One rest end point is not recure.</li>	
+  <li>Implement Swagger2 for API documentation</li>
 </ol>
-
 All the end points are totally secure in this application. I have implemented basic security and method level security as well. Update resource can be accessed by admin/admin user only.
 
-                                                 Method               Request                   Credentials
-                                                  GET              /products/{id}              [SECURE -- normaluser/normaluser]
-                                                  PUT              /products/{id}              [SECURE -- admin/admin]
-						      GET              /products                   [NOT SECURE]
+                                   Method               Request                   Credentials
+                                     GET              /products/{id}              [SECURE -- normaluser/normaluser]
+                                     PUT              /products/{id}              [SECURE -- admin/admin]
+					 GET              /products                   [NOT SECURE]
 
 ###### __Technology Stack:__
 
@@ -98,6 +98,9 @@ The end point of this application is fully secure. There are 3 users in this app
 1. admin/admin   --- Can update price information and get the product by prodctId. 
 2. normaluser/normaluser  --  get the product by prodctId.
 3. dbuser/dbuser  -- get the product by prodctId.
+
+###  Swagger2 documentation path
+http://localhost:8080/swagger-ui.html
 
 GET: With valid product but no credentials (http://localhost:8080/products/13860428)
 ![image](https://user-images.githubusercontent.com/12552208/31319867-e3139ece-ac38-11e7-88b1-4b4fdd0e0c73.png)
