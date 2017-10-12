@@ -34,7 +34,8 @@ public class ProductController {
 	
 	/**
 	 * @return
-	 * This method can be used to fetch all the products. but here I just want to show that any user can see this page.
+	 * This method can be used to fetch all the products. 
+	 * But here I just want to show that any user can see this page. (Means no securityhere.)
 	 * 
 	 */
 	@RequestMapping(value = "",method = RequestMethod.GET)
