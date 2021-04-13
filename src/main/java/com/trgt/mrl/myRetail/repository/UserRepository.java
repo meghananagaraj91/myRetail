@@ -4,10 +4,6 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 
 import com.trgt.mrl.myRetail.entiry.User;
 
-/**
- * @author Rohit
- *
- */
 public interface UserRepository extends MongoRepository<User, String> {
 
 	/**

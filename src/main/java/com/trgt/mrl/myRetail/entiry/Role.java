@@ -3,10 +3,6 @@ package com.trgt.mrl.myRetail.entiry;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-/**
- * @author Rohit
- *
- */
 @Document(collection = "role")
 public class Role {
 

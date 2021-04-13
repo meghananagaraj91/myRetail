@@ -19,9 +19,6 @@ import com.trgt.mrl.myRetail.repository.ProductRepository;
 import com.trgt.mrl.myRetail.repository.RoleRepository;
 import com.trgt.mrl.myRetail.repository.UserRepository;
 
-/**
- * @author Rohit Created On : 10/02/2017
- */
 @Service
 public class InitDbSeederService {
 
@@ -102,7 +99,7 @@ public class InitDbSeederService {
 			roleRepostory.save(roleAdmin);
 			
 			
-			//*********Add user and admin role for rohit*****************************
+			//*********Add user and admin role for meghana*****************************
 			List<Role> roles2 = new ArrayList<>();
 			roles2.add(roleUser);
 			roles2.add(roleAdmin);
@@ -113,7 +110,7 @@ public class InitDbSeederService {
 			accounts.add(account1);
 			//*******************************************
 			
-			//*********Add only user role for Monika and Vivaan**********************************
+			//*********Add only user role for Naveen and Maanvi**********************************
 			List<Role> roles1 = new ArrayList<>();
 			roles1.add(roleUser);
 			User account2 = new User("2","normaluser",passwordEncoder.encode("normalUser"),roles1);

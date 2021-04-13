@@ -22,25 +22,14 @@ import com.trgt.mrl.myRetail.remoteApiComm.feignClient.ProductInfoClient;
 import com.trgt.mrl.myRetail.remoteApiComm.feignClient.ProductInfoClientMock;
 import com.trgt.mrl.myRetail.repository.ProductRepository;
 
-/**
- * @author Rohit Created On : 10/02/2017
- */
-/**
- * @author Rohit
- *
- */
-/**
- * @author Rohit
- *
- */
 @RunWith(SpringRunner.class)
 public class ProductServiceTest {
 
 	@InjectMocks
 	ProductService productService;
 
-	@Mock // -- Spring Boot
-	ProductRepository productrepositoryMock;
+	@Mock 
+	ProductRepository productRepositoryMock;
 
 	@Mock
 	private ProductInfoClient productInfoClient;
@@ -68,8 +57,8 @@ public class ProductServiceTest {
 		currency.put("value", "50");
 		currency.put("currency_code", "USD");
 		Product mockProduct = new Product("13860428", "", currency);
-		System.out.println(productrepositoryMock);
-		Mockito.when(productrepositoryMock.getProductByproductId(Mockito.anyString())).thenReturn(mockProduct);
+		System.out.println(productRepositoryMock);
+		Mockito.when(productRepositoryMock.getProductByproductId(Mockito.anyString())).thenReturn(mockProduct);
 
 		Mockito.when(productInfoClient.getProductInfoById(Mockito.anyString()))
 				.thenReturn(new ProductInfoClientMock().getProductInfoById("13860428"));
@@ -98,7 +87,7 @@ public class ProductServiceTest {
 		currency.put("value", "50");
 		currency.put("currency_code", "USD");
 		Product mockProduct = new Product("13860428", "", currency);
-		Mockito.when(productrepositoryMock.getProductByproductId(Mockito.anyString())).thenReturn(mockProduct);
+		Mockito.when(productRepositoryMock.getProductByproductId(Mockito.anyString())).thenReturn(mockProduct);
 
 		// Mockito.when(productrepositoryMock.getProductByproductId(Mockito.anyString())).thenThrow(new
 		// Exception());

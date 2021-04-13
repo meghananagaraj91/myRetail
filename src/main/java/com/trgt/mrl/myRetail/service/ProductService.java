@@ -16,10 +16,6 @@ import com.trgt.mrl.myRetail.entiry.Product;
 import com.trgt.mrl.myRetail.remoteApiComm.feignClient.ProductInfoClient;
 import com.trgt.mrl.myRetail.repository.ProductRepository;
 
-/**
- * @author Rohit 
- * Created On : 10/02/2017
- */
 @Service
 public class ProductService {
 	protected Logger logger = LoggerFactory.getLogger(this.getClass());
@@ -42,11 +38,11 @@ public class ProductService {
 	 * @throws IOException
 	 */
 	public Product getProductById(String productId) throws JsonParseException, JsonMappingException, IOException {
-		// From application DB
+		// From DataBase
 		Product product = productRepository.getProductByproductId(productId);
 		// From external API
 		product.setTitle(this.getTitleForProduct(productId));
-		logger.info("Title from RFemote API   "+ product.getTitle());
+		logger.info("Title from Remote API   "+ product.getTitle());
 		return product;
 	}
 	

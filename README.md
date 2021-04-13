@@ -1,4 +1,4 @@
-                                               # Target Interview - USA
+                                              
 
 ## __Case Study:  myRetail RESTful service__
 
@@ -9,7 +9,7 @@ Your goal is to create a RESTful service that can retrieve product and price det
 Build an application that performs the following actions: 
 Responds to an HTTP GET request at /products/{id} and delivers product data as JSON (where {id} will be a number. 
 
-Example product IDs: 15117729, 16483589, 16696652, 16752456, 15643793) 
+Example product IDs: 13860428, 16483589, 16696652, 16752456, 15643793) 
 Example response: {"id":13860428,"name":"The Big Lebowski (Blu-ray) (Widescreen)","current_price":{"value": 13.49,"currency_code":"USD"}}
 
 Performs an HTTP GET to retrieve the product name from an external API. (For this exercise the data will come from redsky.target.com, but let’s just pretend this is an internal resource hosted by myRetail) 
@@ -29,7 +29,7 @@ BONUS: Accepts an HTTP PUT request at the same path (/products/{id}), containing
   <li>Retrieve product and price information by Product Id.</li>
   <li>Update the price information in the database.</li>
   <li>Secure API with basic authentication.</li>
-  <li>One rest end point is not recure.</li>	
+  <li>One rest end point is not secure.</li>	
   <li>Implement Swagger2 for API documentation</li>
 </ol>
 All the end points are totally secure in this application. I have implemented basic security and method level security as well. Update resource can be accessed by admin/admin user only.
@@ -44,10 +44,7 @@ All the end points are totally secure in this application. I have implemented ba
 1. Spring Boot : 
 	https://start.spring.io/
 	https://spring.io/guides/gs/serving-web-content/ 
-2. Feign:
-Declarative REST Client: Feign creates a dynamic implementation of an interface decorated with JAX-RS or Spring MVC annotations.
-	https://cloud.spring.io/spring-cloud-netflix/ 
-3. MongoDB:
+2. MongoDB:
 	https://www.mongodb.com/what-is-mongodb 
 
 4. Maven:
@@ -59,10 +56,9 @@ Declarative REST Client: Feign creates a dynamic implementation of an interface 
 
 ###### __Setup instructions:__
 
-1. Java 1.7
-2. Eclipse  Mars: http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/mars2
+1. Java 1.8
 3. Install Mongo DB: https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/
-4. Install Maven: https://www.mkyong.com/maven/how-to-install-maven-in-windows/ 
+4. Install Maven: mvn 
 5. Github:
 Download project from the following git repository
 https://github.com/rohitdec01/myRetail 
@@ -70,8 +66,6 @@ https://github.com/rohitdec01/myRetail
 a) Download as a ZIP file   OR
 
 b) Clone the git project from git-bash or command prompt (You must have git setup)
-
-6. Import the project into eclipse –   File->import
 
 
 ###### __Test the project:__
@@ -101,21 +95,3 @@ The end point of this application is fully secure. There are 3 users in this app
 
 ###  Swagger2 documentation path
 http://localhost:8080/swagger-ui.html
-
-GET: With valid product but no credentials (http://localhost:8080/products/13860428)
-![image](https://user-images.githubusercontent.com/12552208/31319867-e3139ece-ac38-11e7-88b1-4b4fdd0e0c73.png)
-
-GET: with valid product and admin credentials (http://localhost:8080/products/13860428)
-![image](https://user-images.githubusercontent.com/12552208/31319897-71a08440-ac39-11e7-8c1c-31bde9486d42.png)
-
-GET: Wrong product ID and valid credentials admin/admin (http://localhost:8080/products/13860428)
-![image](https://user-images.githubusercontent.com/12552208/31319926-edc74194-ac39-11e7-914e-656dbf03893d.png)
-
-PUT Request: With Valid product Idand admin/admin credentials  (http://localhost:8080/products/13860428)
-![image](https://user-images.githubusercontent.com/12552208/31319946-3e3a1250-ac3a-11e7-8b69-d99e1a2a72d8.png)
-
-PUT Request: With Valid product Id and normaluser/normaluser credentials  (http://localhost:8080/products/13860428)
-![image](https://user-images.githubusercontent.com/12552208/31319968-8a0a3cd2-ac3a-11e7-956b-e8a39fb82256.png)
-
-
-

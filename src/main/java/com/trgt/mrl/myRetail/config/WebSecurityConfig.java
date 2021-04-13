@@ -13,10 +13,6 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 
 import com.trgt.mrl.myRetail.service.UserService;
 
-/**
- * @author Rohit
- *
- */
 @Configuration
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true)

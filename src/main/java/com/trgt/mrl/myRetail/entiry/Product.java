@@ -6,11 +6,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.Transient;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-/**
- * @author Rohit
- * Created On : 10/01/2017
- *
- */
+
 @Document(collection="products")
 public class Product {
 

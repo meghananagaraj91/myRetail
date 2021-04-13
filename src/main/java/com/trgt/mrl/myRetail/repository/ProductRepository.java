@@ -4,10 +4,6 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 
 import com.trgt.mrl.myRetail.entiry.Product;
 
-/**
- * @author Rohit 
- * Created On : 10/02/2017
- */
 public interface ProductRepository extends MongoRepository<Product, String> {
 	
 	/**

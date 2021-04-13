@@ -1,9 +1,5 @@
 package com.trgt.mrl.myRetail.exception;
 
-/**
- * @author Rohit
- *
- */
 public class CustomResponse {
 	private int value;
 	private String message;

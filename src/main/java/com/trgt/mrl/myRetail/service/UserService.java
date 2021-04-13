@@ -16,10 +16,6 @@ import com.trgt.mrl.myRetail.entiry.Role;
 import com.trgt.mrl.myRetail.entiry.User;
 import com.trgt.mrl.myRetail.repository.UserRepository;
 
-/**
- * @author Rohit
- *
- */
 @Service
 public class UserService implements UserDetailsService {
 

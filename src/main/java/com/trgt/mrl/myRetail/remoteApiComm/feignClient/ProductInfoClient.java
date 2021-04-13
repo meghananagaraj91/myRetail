@@ -7,8 +7,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 /**
- * @author Rohit
- * Created On : 10/02/2017
  * 
  * Feign client for remote API (redsky) communication.
  * 

@@ -28,12 +28,9 @@ import com.trgt.mrl.myRetail.entiry.Product;
 import com.trgt.mrl.myRetail.exception.ProductNotFoundException;
 import com.trgt.mrl.myRetail.service.ProductService;
 
-/**
- * @author Rohit Created On : 10/02/2017
- */
+
 @WebMvcTest(value = ProductController.class)
 @RunWith(SpringRunner.class)
-// @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class ProductControllerTest {
 	protected Logger logger = LoggerFactory.getLogger(this.getClass());
 
