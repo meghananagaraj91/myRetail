@@ -17,4 +17,5 @@ public class MyRetailApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(MyRetailApplication.class, args);
 	}
+	
 }

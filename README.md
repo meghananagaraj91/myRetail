@@ -61,7 +61,7 @@ All the end points are totally secure in this application. I have implemented ba
 4. Install Maven: mvn 
 5. Github:
 Download project from the following git repository
-https://github.com/rohitdec01/myRetail 
+https://github.com/meghananagaraj91/myRetail
 
 a) Download as a ZIP file   OR
 
